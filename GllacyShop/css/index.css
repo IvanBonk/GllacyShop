@@ -1,0 +1,202 @@
+
+main .advert_foto {
+	min-height: 600px;
+    background-image: url(../img/ice-cream/ice-cream-banner.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+main .advert {
+	margin-top: -190px;
+}
+
+main .advert h1 {
+	padding-top: 200px;
+	font-weight: bold;
+	font-size: 6vw;
+	text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 30px;
+  background-color: #ec583c;
+  border: none;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px 2px #6c6c6c;
+  font-size: 18px;
+  width: 182px;
+  height: 45px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+main .advert_discount {
+		margin-top: -100px;
+		-webkit-box-sizing: border-box;
+     	-moz-box-sizing: border-box;
+        box-sizing: border-box;
+	}
+	main .raspberry {
+		background-image: url('../img/raspberries.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		height: 230px;
+		width: 85%;
+	 	margin-left: auto;
+		margin-right: auto;
+		margin: 10px;
+		border-radius: 20px;
+		padding: 19px;
+	}
+	.advert_discount h3 {
+		font-size: 34px;
+		margin: 0;
+	}
+	
+	.raspberry p {
+		font-size: 18px;
+	}
+	main .chocolate {
+		background-image: url(../img/chocolate.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		height: 230px;
+		width: 85%;
+	 	margin-left: auto;
+		margin-right: auto;
+		margin: 10px;
+		border-radius: 20px;
+		padding: 19px;
+	}
+
+main .advert_discount {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.advert_discount .btn {
+	font-size: 16px;
+  	width: 182px;
+  	height: 45px;
+}
+.raspberry {
+	position: relative;
+}
+.raspberry .btn{
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+
+.chocolate {
+	position: relative;
+}
+.chocolate .btn {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+
+
+@media (min-width: 700px) {
+	main .advert_discount {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+}
+
+
+@media (min-width: 600px) {
+	main .advert_foto {
+		margin-top: 120px;
+	}
+	main .raspberry {
+		height: 230px;
+		width: 560px;
+	}
+	main .chocolate {
+		height: 230px;
+		width: 560px;
+	}
+
+	main .advert {
+		margin-top: 0px;
+	}
+	main .advert h1 {
+		font-size: 4.5vw;
+	}
+	main .btn {
+		font-size: 28px;
+  		width: 282px;
+  		height: 65px;
+	}
+	
+}
+
+@media (min-width: 400px) {
+	main .advert_discount {
+		margin-top: 0px;
+	}
+
+
+	main .advert {
+		margin-top: -100px;
+	}
+	main .btn {
+		font-size: 23px;
+  		width: 200px;
+  		height: 50px;
+	}
+}
+
+.product_items {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.product_items li{
+	width: 233px;
+
+}
+.product_items img{
+	height: 233px;
+	width: 233px;
+}
