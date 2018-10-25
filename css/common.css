@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body {
-	background-color: #849d8f;
+	/*background-color: #849d8f;*/
+	background-color: #29E4E4;
 	font-family: 'Roboto', sans-serif;
 	color: white;
 	max-width: 1200px;
@@ -212,7 +213,7 @@ header .menu li:hover {
 /*---------main----------*/
 
 main .advert {
-	background: radial-gradient(40% 40%, #cbf2dd, #849d8f);
+	background: radial-gradient(40% 40%, #cbf2dd, #29E4E4);
 }
 
 
