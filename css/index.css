@@ -19,7 +19,7 @@ main .advert h1 {
 	padding-top: 200px;
 	font-weight: bold;
 	
-	font-size: 6vw;
+	font-size: 30px;
 	text-align: center;
 }
 
@@ -81,6 +81,7 @@ main .advert_discount {
 		margin: 10px;
 		border-radius: 20px;
 		padding: 19px;
+		box-shadow: 5px 5px 20px grey;
 	}
 	.advert_discount h3 {
 		font-size: 34px;
@@ -102,6 +103,7 @@ main .advert_discount {
 		margin: 10px;
 		border-radius: 20px;
 		padding: 19px;
+		box-shadow: 5px 5px 20px grey;
 	}
 
 main .advert_discount {
@@ -167,6 +169,8 @@ main .advert_discount {
 .product_items img{
 	height: 233px;
 	width: 233px;
+	box-shadow: 5px 5px 20px grey;
+	border-radius: 130px;
 }
 
 .about {
@@ -181,6 +185,7 @@ main .advert_discount {
 	border-radius: 30px;
 	padding: 35px;
 	color: #323232;
+	box-shadow: 5px 5px 20px grey;
 }
 .about .heading h4{
 	margin: 0;
@@ -209,19 +214,24 @@ main .advert_discount {
 	margin: 0;
 	margin-left: 10px;
 }
-
-main .map {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	margin-top: 35px;
-	width: 100%;
-	height: 430px;
+main .contact_box{
 	background-image: url(../img/map.png);
-	-webkit-background-size: cover;
 	background-size: cover;
 	background-repeat: no-repeat;
 	border-radius: 20px;
+	height: 430px;
+	margin-bottom: 350px;
+	box-shadow: 5px 5px 20px grey;
+}
+
+main .map {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin-top: 35px;
+	width: 100%;
+	height: 760px;
+
 }
 
 main .contacts {
@@ -234,8 +244,7 @@ main .contacts {
 	background-color: white;
 	border-radius: 20px;
 	color: black;
-	margin-right: 40px;
-	
+	box-shadow: 5px 5px 20px grey;
 }
 main .contacts .btn {
 	font-size: 16px;
@@ -252,6 +261,9 @@ main .contacts .btn {
 	}
 	main .advert {
 		margin-top: -100px;
+	}
+	main .advert h1 {
+		font-size: 36px;
 	}
 	main .btn {
 		font-size: 23px;
@@ -281,7 +293,7 @@ main .contacts .btn {
 		margin-top: 0px;
 	}
 	main .advert h1 {
-		font-size: 4.5vw;
+		font-size: 47px;
 	}
 	main .btn {
 		font-size: 28px;
@@ -296,20 +308,42 @@ main .contacts .btn {
 	}
 }
 @media (min-width: 700px) {
+	main .advert h1 {
+		font-size: 55px;
+	}
 	
 	main .advert_discount {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
 	}
+	
+	main .contact_box{
+		margin-bottom: 0;
+	}
+	
+	main .map {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		margin-top: 35px;
+		width: 100%;
+		height: 420px;
+	}
+	 main .contacts {
+	 	margin-right: 35px;
+	 }
+	
 }
-
 
 
 @media (min-width: 850px){
 	.about {
 		min-width: 100%;
 		height: 320px;
+	}
+	main .advert h1 {
+		font-size: 65px;
 	}
 	.ad_items {
 		display: grid;
