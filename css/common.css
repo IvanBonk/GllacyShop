@@ -292,6 +292,137 @@ header .menu li:hover {
 	background-color: rgba(255, 255, 255, 0.5);
 }
 
+.modal_login {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+}
+.modal_reg {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+}
+.modal_content_login {
+	color: #000;
+	position: relative;
+	background-color: #fefefe;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 35%;
+}
+.modal_content_reg {
+	color: #000;
+	position: relative;
+	background-color: #fefefe;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 35%;
+}
+.modal_content_login .form_name {
+	display: flex;
+	flex-direction:row;
+	justify-content:space-around;
+	flex-wrap: wrap;
+	margin: 0;
+}
+.modal_content_reg .form_name {
+	display: flex;
+	flex-direction:row;
+	justify-content:space-around;
+	flex-wrap: wrap;
+	margin: 0;
+}
+main .modal_content .user_name, .user_email, .title, .comment {
+	border: none;
+	border-radius: 20px;
+	background-color: rgba(128,128,128,0.4);
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.modal_content_login .user_password {
+	border: none;
+	border-radius: 20px;
+	background-color: rgba(128,128,128,0.4);
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.modal_content_login .btn {
+	width: 130px;
+	height: 40px;
+	font-size: 20px;
+}
+.modal_content_reg .btn {
+	width: 140px;
+	height: 40px;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+.modal_content_login .text_area {
+	display: flex;
+	justify-content:space-around;
+}
+.modal_content_reg .text_area {
+	display: flex;
+	justify-content:flex-start;
+}
+.modal_content_reg .user_name, .user_surname, .user_email, .user_password {
+	border: none;
+	border-radius: 20px;
+	background-color: rgba(128,128,128,0.4);
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.btn_close_login {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background-color: #fefefe;
+	border: none;
+	font-size: 28px;
+	color: #aaa;
+	font-weight: bold;
+}
+.btn_close_reg {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background-color: #fefefe;
+	border: none;
+	font-size: 28px;
+	color: #aaa;
+	font-weight: bold;
+}
+@media (max-width: 800px){
+	.modal_content_reg .user_name, .user_surname, .user_email, .user_password {
+		width:90%;
+	}
+	.modal_content_login .user_password{
+		width:90%;
+	}
+	.modal_content_login .text_area {
+		display: flex;
+		flex-direction:column;
+		align-items:center;
+	}
+	.modal_content_login .btn {
+		margin-bottom: 10px;
+}
+
+}
 @media (min-width: 400px) {
 	header .menu {
 	display: flex;

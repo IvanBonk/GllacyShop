@@ -1,3 +1,37 @@
+.hidden_btn {
+	display: none;
+	border-radius: 30px;
+    background-color: #ec583c;
+    border: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 2px #6c6c6c;
+    font-size: 18px;
+    width: 205px;
+    height: 45px;
+}
+
+.hidden_btn:hover {
+	background-color: #ef300e;
+}
+
+.hidden_btn_visible {
+	display: inline-block;
+	border-radius: 30px;
+    background-color: #ec583c;
+    border: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 2px #6c6c6c;
+    font-size: 18px;
+    width: 205px;
+    height: 45px;
+}
+.hidden_btn_visible:hover {
+	background-color: #ef300e;
+}
 
 main .advert_foto {
 	min-height: 600px;
@@ -38,30 +72,8 @@ main .advert h1 {
   transition: all 0.5s;
   cursor: pointer;
 }
-
-.btn span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.btn span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.btn:hover span {
-  padding-right: 25px;
-}
-
-.btn:hover span:after {
-  opacity: 1;
-  right: 0;
+.btn:hover {
+	background-color: #ef300e;
 }
 
 main .advert_discount {
@@ -137,7 +149,8 @@ main .advert_discount {
 
 .product li{
 	list-style-type: none;
-	height: 320px;
+	padding-top: 20px;
+	height: 390px;
 }
 .product_items{
 	padding: 0;
@@ -146,6 +159,7 @@ main .advert_discount {
 	position: relative;
 	
 }
+
 .product_items h3 {
 	position: absolute;
 	bottom: -10px;
@@ -153,15 +167,53 @@ main .advert_discount {
 	font-size: 40px;
 	text-shadow: 2px 2px 2px #6c6c6c;
 }
+
+.product_items .hidden_btn_block {
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+}
+.item {
+	display: block;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.3);
+}
+
+.btn_close_prod {
+	display: none;
+	position: absolute;
+	top: -18px;
+	right: -16px;
+	background-color: #fefefe;
+	border: none;
+	font-size: 28px;
+	color: #aaa;
+	font-weight: bold;
+}
+.btn_close_prod:hover {
+	color: #ec583c;
+}
+
+.item_content_style {
+	color: #000;
+	background-color: #fefefe;
+	padding: 20px;
+	margin-top: -20px;
+	border: 1px solid #888;
+	z-index: 2;
+}
+
 .product_items .btn {
-	margin-top: 15px;
 	width: 220px;
 	height: 50px;
 	font-size: 18px;
 }
-#swipe_btn{
-	display: none;
-}
+
 .product_items p {
 	text-align: center;
 }
@@ -173,14 +225,18 @@ main .advert_discount {
 }
 .product_items li{
 	width: 233px;
-
+	display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .product_items img{
+	margin-bottom: 10px;
 	height: 233px;
 	width: 233px;
 	box-shadow: 5px 5px 20px grey;
 	border-radius: 130px;
 }
+
 
 .about {
 	-webkit-box-sizing: border-box;
@@ -262,7 +318,7 @@ main .contacts .btn {
 	margin-left: 18px;
 }
 
-main .modal {
+.modal {
 	display: none;
 	position: fixed;
 	z-index: 1;
@@ -270,7 +326,6 @@ main .modal {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	overflow: auto;
 	background-color: rgba(0,0,0,0.8);
 }
 
@@ -291,6 +346,8 @@ main .modal_content .form_name {
 	flex-wrap: wrap;
 	margin: 0;
 }
+
+
 main .modal_content .user_name, .user_email, .title, .comment {
 	border: none;
 	border-radius: 20px;
@@ -298,7 +355,6 @@ main .modal_content .user_name, .user_email, .title, .comment {
 	padding: 10px;
 	margin-bottom: 20px;
 }
-
 
 main .modal_content .text_area {
 	display: flex;
@@ -319,6 +375,8 @@ main .modal_content .btn {
 	font-size: 20px;
 }
 
+
+
 main .btn_close {
 	position: absolute;
 	top: 5px;
@@ -330,10 +388,23 @@ main .btn_close {
 	font-weight: bold;
 }
 
+
 @media (max-width: 800px){
 	main .modal_content .user_name, .user_email {
 		width:90%;
 	}
+	.modal_content_login .user_password{
+		width:90%;
+	}
+	.modal_content_login .text_area {
+		display: flex;
+		flex-direction:column;
+		align-items:center;
+	}
+	.modal_content_login .btn {
+		margin-bottom: 10px;
+}
+	
 }
 @media (min-width: 400px) {
 

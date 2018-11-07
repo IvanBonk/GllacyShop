@@ -32,10 +32,10 @@
 						<a href="catalog.html">Каталог</a>
 					</li>
 					<li>
-						<a href="#">Доставка і оплата</a>
+						<a href="payment.html">Доставка і оплата</a>
 					</li>
 					<li>
-						<a href="#" target="_blank">Про компанію</a>
+						<a href="#">Про компанію</a>
 					</li>
 				</ul>
 			</div>
@@ -43,9 +43,9 @@
 		<div></div>
 		<div class="menu_basket">
 			<ul class="menu">
-				<li class="enter_bar">
+				<li class="enter_bar modal_login_btn">
 					<img src="img/enter.png" alt="Вхід">
-					<span>Вхід</span>
+					<span class="sign_in">Вхід</span>
 				</li>
 				<li class="backet_bar">
 					<img src="img/basket.png" alt="Корзина">
@@ -77,62 +77,90 @@
 			<div class="product_block">
 				<ul class="product_items">
 					<li>
-						<div class="product_image">
-							<img src="img/ice-cream/1.png" alt="Фото морозива">
-							<h3>155₴/кг</h3>
+						<div></div>
+						<div class="item_content">
+							<div class="hidden_btn_block">
+								<div class="product_image">
+									<button class="btn_close_prod">&times;</button>
+									<img class="list_item" src="img/ice-cream/1.png" alt="Фото морозива">
+									<h3>155₴/кг</h3>
+								</div>
+								<button class="hidden_btn">Додати в корзину</button>
+							</div>
+							<p>Вершкове з апельсиновим джемом і цитрусовою стружкою</p>
 						</div>
-						<button id="swipe_btn" class="btn"><span>Додати в корзину</span></button>
-						<p>Вершкове з апельсиновим джемом і цитрусовою стружкою</p>
 					</li>
 					<li>
-						<div class="product_image">
-							<img src="img/ice-cream/2.png" alt="Фото морозива">
-							<h3>185₴/кг</h3>
+						<div></div>
+						<div class="item_content">
+							<div class="hidden_btn_block">
+								<div class="product_image">
+									<button class="btn_close_prod">&times;</button>
+									<img class="list_item" src="img/ice-cream/2.png" alt="Фото морозива">
+									<h3>185₴/кг</h3>
+								</div>
+								<button class="hidden_btn">Додати в корзину</button>
+							</div>
+							<p>Вершково - кавове  зі   шматочками  шоколаду</p>
 						</div>
-						<p>Вершково - кавове  зі   шматочками  шоколаду</p>
 					</li>
 					<li>
-						<div class="product_image">
-							<img src="img/ice-cream/3.png" alt="Фото морозива">
-							<h3>190₴/кг</h3>
-						</div>	
-						<p>Вершково - полуничне з присипкою  із білого шоколаду</p>
+						<div></div>
+						<div class="item_content">
+							<div class="hidden_btn_block">
+								<div class="product_image">
+									<button class="btn_close_prod">&times;</button>
+									<img class="list_item" src="img/ice-cream/3.png" alt="Фото морозива">
+									<h3>190₴/кг</h3>
+								</div>	
+								<button class ="hidden_btn">Додати в корзину</button>
+							</div>
+							<p>Вершково - полуничне з присипкою  із білого шоколаду</p>
+						</div>
+						
 					</li>
 					<li>
-						<div class="product_image">
-							<img src="img/ice-cream/4.png" alt="Фото морозива">
-							<h3>205₴/кг</h3>
+						<div></div>
+						<div class="item_content">
+							<div class="hidden_btn_block">
+								<div class="product_image">
+									<button class="btn_close_prod">&times;</button>
+									<img class="list_item" src="img/ice-cream/4.png" alt="Фото морозива">
+									<h3>205₴/кг</h3>
+								</div>
+								<button class="hidden_btn">Додати в корзину</button>
+							</div>	
+							<p>Вершкове крем - брюле  із карамеллю</p>
 						</div>
-						<p>Вершкове крем - брюле  із карамеллю</p>
 					</li>
 				</ul>
 			</div>
 		</section>
-		<article class="about">
+		<article  id="about_swipe" class="about">
 			<div class="heading">
 				<h4>Магазин Глейсі - це онлайн і офлайн магазин з продажу морозива власного виробництва на вагу</h4>
 			</div>
 			<div class="advanteges">
 				<ul class="ad_items">
-					<li class="item">
+					<li>
 						<div class="pic">
 							<img src="img/ice-cream.png" alt="Іконка морозива">
 						</div>
 						<p>Все наше морозиво виготовляється на власному виробництві з використанням сучасного обладнання і перевірених часом технологій.</p>
 					</li>
-					<li class="item">
+					<li >
 						<div class="pic">
 							<img src="img/leaflet.png" alt="Іконка листа">
 						</div>
 						<p>Для приготування морозива використовуються справжні вершки та молоко найвищої якості. Всі додаткові інгрідієнти та добавки виготовлені з натуральної, екологічно чистої сировини.</p>
 					</li>
-					<li class="item">
+					<li >
 						<div class="pic">
 							<img src="img/cow.png" alt="Іконка корови">
 						</div>
 						<p>Закупівля інгрідієнтів здійснюється лише у перевірених фермерів та компаній, з якими нас зв'язує довготривала співпраця.</p>
 					</li>
-					<li class="item">
+					<li>
 						<div class="pic">
 							<img src="img/thermometer.png" alt="Іконка термометра">
 						</div>
@@ -159,17 +187,16 @@
 			<div class="modal_content">
 				<button class="btn_close">&times;</button>
 				<form class="login-form">
-					<label class="form_name">
-						<input type="text" class="user_name" name="user_name" placeholder="Ваше ім'я" requaired/>
-				
-						<input type="mail" class="user_email" name="e-mail" placeholder="Ваш E-mail" requaired/>
-					</label>
+					<div class="form_name">
+						<input type="text" class="user_name" name="user_name" placeholder="Ваше ім'я" required/>
+						<input type="email" class="user_email" name="e-mail" placeholder="Ваш E-mail" required/>
+					</div>
 					<br>
 					
-					<label class="text_area" >
+					<div class="text_area" >
 						<input type="text" class="title" name="title" placeholder="Заголовок"/>
 						<input type="text" class="comment" name="text" placeholder="Введіть текст сюди"/>
-					</label>
+					</div>
 					<div class="text_area">
 						<input type="submit" class="btn" value="Надіслати"/>
 					</div>
@@ -181,21 +208,21 @@
 		<div class="social_links">
 			<ul class="s_link_item">
 				<li>
-					<a href="#">
+					<a href="https://twitter.com/ivan_bonk" target="_blank">
 						<img src="img/twitter.png" alt="Іконка twitter">
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="https://www.instagram.com/ivan_bonk/?hl=uk" target="_blank">
 						<img src="img/instagram.png" alt="Іконка instagram">
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="https://www.facebook.com/vaaeking" target="_blank">
 						<img src="img/facebook.png" alt="Іконка facebook">
 					</a>
 				</li>
-				<li><a href="#">
+				<li><a href="https://vk.com/ivan_bonk" target="_blank">
 						<img src="img/vk.png" alt="Іконка Вконтакті">
 					</a></li>
 			</ul>
@@ -205,13 +232,13 @@
 				<a href="#">Для постачальників</a>
 			</li>
 			<li>
-				<a href="#">Про виробництво</a>
+				<a href="#about_swipe">Про компанію</a>
 			</li>
 			<li>
 				<a href="#">Документація</a>
 			</li>
 			<li>
-				<a href="#">Екологічні стандарти</a>
+				<a href="http://ukrapk.com/gosts/milk/dsty47332007morozivomolochnevershkoveplombir.html">Екологічні стандарти</a>
 			</li>	
 		</ul>
 		<div class="copyright">
@@ -219,7 +246,46 @@
 			<p><img src="img/copyright.png" alt="copyright"> 2018</p>
 		</div>
 	</footer>
-	
+	<div class="modal_login">
+		<div class="modal_content_login">
+			<button class="btn_close_login">&times;</button>
+			<form class="login-form_login">
+				<div class="form_name">
+					<input type="email" class="user_email" name="e-mail" placeholder="Ваш E-mail"/>
+					<input type="password" class="user_password" name="user_password" placeholder="Пароль"/>
+				</div>
+			</form>
+			<div class="text_area">
+				<button class="btn login_access">Вхід</button>
+				<button class="btn modal_regist">Реєстрація</button>
+			</div>
+				
+			
+		</div>
+	</div>
+	<div class="modal_reg">
+		<div class="modal_content_reg">
+			<button class="btn_close_reg">&times;</button>
+			<form class="login-form_reg">
+				<div class="form_name">
+					<input type="text" class="user_name" name="user_name" placeholder="Ім'я"/>
+					<input type="text" class="user_surname" name="user_surname" placeholder="Прізвище"/>
+				</div>
+				<div class="form_name">
+					<input type="email" class="user_email" name="e-mail" placeholder="Ваш E-mail"/>
+					<input type="password" class="user_password" name="user_password" placeholder="Пароль"/>
+				</div>
+			</form>	
+			<div class="form_name">
+				<button class="btn access_reg">Підтвердити</button>
+				<button class="btn cancel_reg">Скасувати</button>
+			</div>
+		</div>
+	</div>
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
 	<script src="js/index.js"></script>
 </body>
 </html>

@@ -23,23 +23,24 @@
 				<span></span>
 				<ul id="menu" class="nav_items">
 					<li>
+						<a href="index.html">Головна</a>
+					</li>
+					<li>
 						<a href="catalog.html">Каталог</a>
 					</li>
 					<li>
-						<a href="#">Доставка і оплата</a>
+						<a href="payment.html">Доставка і оплата</a>
 					</li>
-					<li>
-						<a href="#" target="_blank">Про компанію</a>
-					</li>
+					
 				</ul>
 			</div>
 		</nav>
 		<div></div>
 		<div class="menu_basket">
 			<ul class="menu">
-				<li class="enter_bar">
+				<li class="enter_bar modal_login_btn">
 					<img src="img/enter.png" alt="Вхід">
-					<span>Вхід</span>
+					<span class="sign_in">Вхід</span>
 				</li>
 				<li class="backet_bar">
 					<img src="img/basket.png" alt="Корзина">
@@ -49,145 +50,181 @@
 		</div>
 	</header>
 	<main>
-		<!--<section class="select_bar">
-			<laber for="sort">
-				Сортування: <br>
-				<select name="sort" id="sort">
-					<option value="popular_down">За популярністю &darr;</option>
-					<option value="popular_up">За популярністю &uarr;</option>
-					<option value="price_down">За ціною &darr;</option>
-					<option value="price_up">За ціною &uarr;</option>
-				</select>
-			</laber>
-			<label for="scroll_price">
-				Ціна: 0 ₴ - 300 ₴<br>
-				<input type="range" min="0" max="300" id="scroll_price">
-			</label>
-			<div class="filler">
-				<label>Наповнювачі:</label>
-				<label>
-					<input type="checkbox" name="chocolate" value="chocolate"/>
-					Шоколад
-				</label>
-				<label>
-					<input type="checkbox" name="fruit" value="fruit"/>
-					Фрукти
-				</label>
-				<label>
-					<input type="checkbox" name="syrup" value="syrup"/>
-					Сироп
-				</label>
-				<label>
-					<input type="checkbox" name="jam" value="jam"/>
-					Джем
-				</label>
-			</div>
-			<label>
-				<input type="submit" value="Застосувати">
-			</label>
-			
-		</section>-->
+		
 		<section class="product">
 			<div class="product_block">
 				<ul class="product_items">
 					<li>
-						<div class="content">
-							<div class="product_image">
-								<img src="img/ice-cream/1.png" alt="Фото морозива">
-								<h3>155₴/кг</h3>
-							</div>	
+						<div></div>
+						<div class="item_content">
+							<div class="hidden_btn_block">
+								<div class="product_image">
+									<button class="btn_close_prod">&times;</button>
+									<img class="list_item" src="img/ice-cream/1.png" alt="Фото морозива">
+									<h3>155₴/кг</h3>
+								</div>
+								<button class="hidden_btn">Додати в корзину</button>
+							</div>
 							<p>Вершкове з апельсиновим джемом і цитрусовою стружкою</p>
 						</div>
 					</li>
 					<li>
-						<div class="product_image">
-							<img src="img/ice-cream/2.png" alt="Фото морозива">
-							<h3>185₴/кг</h3>
-						</div>	
-						<p>Вершково - кавове  зі   шматочками  шоколаду</p>
-					</li>
-					<li>
-						<div class="product_image">
-							<img src="img/ice-cream/3.png" alt="Фото морозива">
-							<h3>190₴/кг</h3>
-						</div>	
-						<p>Вершково - полуничне з присипкою  із білого шоколаду</p>
-					</li>
-					<li>
-						<div class="product_image">
-							<img src="img/ice-cream/4.png" alt="Фото морозива">
-							<h3>205₴/кг</h3>
+						<div></div>
+						<div class="item_content">
+							<div class="hidden_btn_block">
+								<div class="product_image">
+									<button class="btn_close_prod">&times;</button>
+									<img class="list_item" src="img/ice-cream/2.png" alt="Фото морозива">
+									<h3>185₴/кг</h3>
+								</div>
+								<button class="hidden_btn">Додати в корзину</button>
+							</div>
+							<p>Вершкове з апельсиновим джемом і цитрусовою стружкою</p>
 						</div>
-						<p>Вершкове крем - брюле  із карамеллю</p>
 					</li>
 					<li>
-						<div class="product_image">
-							<img src="img/ice-cream/5.png" alt="Фото морозива">
-							<h3>110₴/кг</h3>
-						</div>	
-						<p>Вершкове з брусничним джемом</p>
+						<div></div>
+						<div class="item_content">
+							<div class="hidden_btn_block">
+								<div class="product_image">
+									<button class="btn_close_prod">&times;</button>
+									<img class="list_item" src="img/ice-cream/3.png" alt="Фото морозива">
+									<h3>190₴/кг</h3>
+								</div>
+								<button class="hidden_btn">Додати в корзину</button>
+							</div>
+							<p>Вершкове з апельсиновим джемом і цитрусовою стружкою</p>
+						</div>
 					</li>
 					<li>
-						<div class="product_image">
-							<img src="img/ice-cream/6.png" alt="Фото морозива">
-							<h3>130₴/кг</h3>
-						</div>	
-						<p>Вершково - чорничне з ягодами</p>
+						<div></div>
+						<div class="item_content">
+							<div class="hidden_btn_block">
+								<div class="product_image">
+									<button class="btn_close_prod">&times;</button>
+									<img class="list_item" src="img/ice-cream/4.png" alt="Фото морозива">
+									<h3>205₴/кг</h3>
+								</div>
+								<button class="hidden_btn">Додати в корзину</button>
+							</div>
+							<p>Вершкове з апельсиновим джемом і цитрусовою стружкою</p>
+						</div>
 					</li>
 					<li>
-						<div class="product_image">
-							<img src="img/ice-cream/7.png" alt="Фото морозива">
-							<h3>113₴/кг</h3>
-						</div>	
-						<p>Вершково - лимонне з карамельною присипкою</p>
+						<div></div>
+						<div class="item_content">
+							<div class="hidden_btn_block">
+								<div class="product_image">
+									<button class="btn_close_prod">&times;</button>
+									<img class="list_item" src="img/ice-cream/5.png" alt="Фото морозива">
+									<h3>110₴/кг</h3>
+								</div>
+								<button class="hidden_btn">Додати в корзину</button>
+							</div>
+							<p>Вершкове з апельсиновим джемом і цитрусовою стружкою</p>
+						</div>
 					</li>
 					<li>
-						<div class="product_image">
-							<img src="img/ice-cream/8.png" alt="Фото морозива">
-							<h3>125₴/кг</h3>
-						</div>	
-						<p>Вершкове з шоколадною стружкою</p>
+						<div></div>
+						<div class="item_content">
+							<div class="hidden_btn_block">
+								<div class="product_image">
+									<button class="btn_close_prod">&times;</button>
+									<img class="list_item" src="img/ice-cream/6.png" alt="Фото морозива">
+									<h3>130₴/кг</h3>
+								</div>
+								<button class="hidden_btn">Додати в корзину</button>
+							</div>
+							<p>Вершкове з апельсиновим джемом і цитрусовою стружкою</p>
+						</div>
 					</li>
 					<li>
-						<div class="product_image">
-							<img src="img/ice-cream/9.png" alt="Фото морозива">
-							<h3>135₴/кг</h3>
-						</div>	
-						<p>Вершково - ванільне з кусочками шоколаду
+						<div></div>
+						<div class="item_content">
+							<div class="hidden_btn_block">
+								<div class="product_image">
+									<button class="btn_close_prod">&times;</button>
+									<img class="list_item" src="img/ice-cream/7.png" alt="Фото морозива">
+									<h3>113₴/кг</h3>
+								</div>
+								<button class="hidden_btn">Додати в корзину</button>
+							</div>
+							<p>Вершкове з апельсиновим джемом і цитрусовою стружкою</p>
+						</div>
 					</li>
 					<li>
-						<div class="product_image">
-							<img src="img/ice-cream/10.png" alt="Фото морозива">
-							<h3>100₴/кг</h3>
-						</div>	
-						<p>Вершкове з ментоловим сиропом</p>
+						<div></div>
+						<div class="item_content">
+							<div class="hidden_btn_block">
+								<div class="product_image">
+									<button class="btn_close_prod">&times;</button>
+									<img class="list_item" src="img/ice-cream/8.png" alt="Фото морозива">
+									<h3>125₴/кг</h3>
+								</div>
+								<button class="hidden_btn">Додати в корзину</button>
+							</div>
+							<p>Вершкове з апельсиновим джемом і цитрусовою стружкою</p>
+						</div>
 					</li>
 					<li>
-						<div class="product_image">
-							<img src="img/ice-cream/11.png" alt="Фото морозива">
-							<h3>120₴/кг</h3>
-						</div>	
-						<p>Вершкове з кусочками чорного шоколаду</p>
+						<div></div>
+						<div class="item_content">
+							<div class="hidden_btn_block">
+								<div class="product_image">
+									<button class="btn_close_prod">&times;</button>
+									<img class="list_item" src="img/ice-cream/9.png" alt="Фото морозива">
+									<h3>135₴/кг</h3>
+								</div>
+								<button class="hidden_btn">Додати в корзину</button>
+							</div>
+							<p>Вершкове з апельсиновим джемом і цитрусовою стружкою</p>
+						</div>
 					</li>
 					<li>
-						<div class="product_image">
-							<img src="img/ice-cream/12.png" alt="Фото морозива">
-							<h3>100₴/кг</h3>
-						</div>	
-						<p>Вершкове з мятним сиропом</p>
+						<div></div>
+						<div class="item_content">
+							<div class="hidden_btn_block">
+								<div class="product_image">
+									<button class="btn_close_prod">&times;</button>
+									<img class="list_item" src="img/ice-cream/10.png" alt="Фото морозива">
+									<h3>100₴/кг</h3>
+								</div>
+								<button class="hidden_btn">Додати в корзину</button>
+							</div>
+							<p>Вершкове з апельсиновим джемом і цитрусовою стружкою</p>
+						</div>
+					</li>
+					<li>
+						<div></div>
+						<div class="item_content">
+							<div class="hidden_btn_block">
+								<div class="product_image">
+									<button class="btn_close_prod">&times;</button>
+									<img class="list_item" src="img/ice-cream/11.png" alt="Фото морозива">
+									<h3>120₴/кг</h3>
+								</div>
+								<button class="hidden_btn">Додати в корзину</button>
+							</div>
+							<p>Вершкове з апельсиновим джемом і цитрусовою стружкою</p>
+						</div>
+					</li>
+					<li>
+						<div></div>
+						<div class="item_content">
+							<div class="hidden_btn_block">
+								<div class="product_image">
+									<button class="btn_close_prod">&times;</button>
+									<img class="list_item" src="img/ice-cream/12.png" alt="Фото морозива">
+									<h3>100₴/кг</h3>
+								</div>
+								<button class="hidden_btn">Додати в корзину</button>
+							</div>
+							<p>Вершкове з апельсиновим джемом і цитрусовою стружкою</p>
+						</div>
 					</li>
 				</ul>
 			</div>
-			<!--<div class="switch_page">
-				<ul class="switch_elem">
-					<li><a href="#">&lt</a></li>
-					<li><a href="#">1</a></li>
-					<li><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
-					<li><a href="#">4</a></li>
-					<li><a href="#">&gt</a></li>
-				</ul>
-			</div>-->
+			
 		</section>
 	</main>
 <footer>
@@ -232,5 +269,47 @@
 			<p><img src="img/copyright.png" alt="copyright"> 2018</p>
 		</div>
 	</footer>
+	<div class="modal_login">
+		<div class="modal_content_login">
+			<button class="btn_close_login">&times;</button>
+			<form class="login-form_login">
+				<label class="form_name">
+					<input type="mail" class="user_email" name="e-mail" placeholder="Ваш E-mail"/>
+					<input type="password" class="user_password" name="user_password" placeholder="Пароль"/>
+				</label>
+			</form>
+			<div class="text_area">
+				<button class="btn login_access">Вхід</button>
+				<button class="btn modal_regist">Реєстрація</button>
+			</div>
+				
+			
+		</div>
+	</div>
+	<div class="modal_reg">
+		<div class="modal_content_reg">
+			<button class="btn_close_reg">&times;</button>
+			<form class="login-form_reg">
+				<div class="form_name">
+					<input type="text" class="user_name" name="user_name" placeholder="Ім'я"/>
+					<input type="text" class="user_surname" name="user_surname" placeholder="Прізвище"/>
+				</div>
+				<div class="form_name">
+					<input type="email" class="user_email" name="e-mail" placeholder="Ваш E-mail"/>
+					<input type="password" class="user_password" name="user_password" placeholder="Пароль"/>
+				</div>
+			</form>	
+			<div class="form_name">
+				<button class="btn access_reg">Підтвердити</button>
+				<button class="btn cancel_reg">Скасувати</button>
+			</div>
+		</div>
+	</div>
+	
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+	<script src="js/catalog.js"></script>
 </body>
 </html>

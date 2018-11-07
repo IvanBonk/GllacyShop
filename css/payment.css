@@ -1,0 +1,10 @@
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+header .nav_items li:nth-child(3) a {
+	color:#d07058;
+}
+header .nav_items li:nth-child(3) a:hover {
+	color:white;
+}

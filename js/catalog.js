@@ -1,37 +1,5 @@
 (function(){
-    window.addEventListener("load", preLoader);
-    function preLoader()
-    {
-        setTimeout(function() {
-            
-            const body    =   document.querySelector("body");
-            const loader  =   document.getElementById("preloader");
-            const pulsar  =   document.getElementById("pulsar");
-            
-            body.classList.remove('cut');
-            pulsar.classList.add('hide');
-            loader.classList.add('moveUp');
-            
-        }, 1000)
-    }
     
-    const modal = document.querySelector('.modal');
-    document.getElementById('feedback').addEventListener('click', openModal);
-    document.querySelector('.btn_close').addEventListener('click', closeModal);
-    
-    function openModal(){
-        modal.style.display = "block";
-    }
-    
-    function closeModal(){
-        modal.style.display = "none";
-    }
-    
-    window.addEventListener('click', function(event){
-        if(event.target === modal){
-            modal.style.display = "none";
-        }
-    })
     
     const modalLogin = document.querySelector('.modal_login');
     document.querySelector('.modal_login_btn').addEventListener('click', openModalLogin);
@@ -128,24 +96,5 @@
                 
             }
          })
-    }
-    
-    document.querySelector('.login-form input[type=submit]').addEventListener('click', sendForm);
-    
-    function sendForm(e){
-        e.preventDefault();
-        const xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function (){
-            if(xhr.readyState === 4 && xhr.status === 200){
-                document.querySelector('.login-form').innerHTML = 'Thank you!';
-                
-            }else if(xhr.readyState === 4 && xhr.status != 200){
-                document.querySelector('.login-form').innerHTML = 'Error!';
-            }
-        }
-        xhr.open('POST', 'login.php', true);
-        const form = document.querySelector('.login-form');
-        const data = new FormData(form);
-        xhr.send(data);
     }
 })();
