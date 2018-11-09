@@ -106,12 +106,14 @@
         $(modalProd).prev().addClass('item');
         $(modalProd).addClass('item_content_style');
         $(target).parent().find('.btn_close_prod').css('display', 'block');
+        $(modalProd).find('.hidden_para').css('display', 'block');
         $(target).parent().parent().find('.hidden_btn')
         .removeClass('hidden_btn').addClass('hidden_btn_visible');
         
         $(target).parent().find('.btn_close_prod').click(function(){
             $(modalProd).removeClass('item_content_style');
                 $(modalProd).prev().removeClass('item');
+                $(modalProd).find('.hidden_para').css('display', 'none');
                 $(target).parent().find('.btn_close_prod').css('display', 'none');
                 $(target).parent().parent().find('.hidden_btn_visible')
                     .removeClass('hidden_btn_visible').addClass('hidden_btn');
@@ -122,6 +124,7 @@
             if(event.target === document.querySelector('.item') ) {
                 $(modalProd).removeClass('item_content_style');
                 $(modalProd).prev().removeClass('item');
+                $(modalProd).find('.hidden_para').css('display', 'none');
                 $(target).parent().find('.btn_close_prod').css('display', 'none');
                 $(target).parent().parent().find('.hidden_btn_visible')
                     .removeClass('hidden_btn_visible').addClass('hidden_btn');

@@ -22,6 +22,7 @@ header .nav_items li:nth-child(2) a:hover {
 
 .hidden_btn:hover {
 	background-color: #ef300e;
+	cursor: pointer;
 }
 
 .hidden_btn_visible {
@@ -39,6 +40,7 @@ header .nav_items li:nth-child(2) a:hover {
 }
 .hidden_btn_visible:hover {
 	background-color: #ef300e;
+	cursor: pointer;
 }
 
 

@@ -270,6 +270,7 @@ footer .copyright img {
 header .menu_basket {
 	display: flex;
 	justify-content: flex-end;
+	z-index: 4;
 
 }
 header .menu {
@@ -277,6 +278,7 @@ header .menu {
 	list-style-type: none;
 	flex-direction: column;
 }
+
 header .menu li {
 	color: white;
 	display: flex;
@@ -290,6 +292,11 @@ header .menu li {
 }
 header .menu li:hover {
 	background-color: rgba(255, 255, 255, 0.5);
+	cursor: pointer;
+}
+
+.list_item:hover {
+	cursor: pointer;
 }
 
 .modal_login {
